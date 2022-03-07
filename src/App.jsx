@@ -1,23 +1,23 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.css"
-import './App.css';
-import "bootstrap-icons/font/bootstrap-icons.css";
-import "bootstrap/dist/js/bootstrap.js"
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-icons/font/bootstrap-icons.css'
+import 'bootstrap/dist/js/bootstrap.js'
+import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 //import pages
-import Home from "./pages/Home"
+import HomeModal from './components/HomeModal'
 
 class App extends React.Component {
-    render(){
-        return(
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                </Routes>
-            </BrowserRouter>
-        )
-    }
+  render() {
+    return (
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<HomeModal />} />
+        </Routes>
+      </BrowserRouter>
+    )
+  }
 }
 
-export default (App)
+export default App
