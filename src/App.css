@@ -119,3 +119,37 @@ body {
     padding: 0.25rem 1rem 0.25rem 1rem;
   }
 }
+
+.tab-menu {
+  display: flex;
+  position: sticky;
+  top: 10px;
+  float: left;
+  width: 100%;
+  justify-content: center;
+}
+
+.tab-menu div {
+  background-color: rgba(212, 172, 43, 0.65);
+  padding: 10px 20px 10px 20px;
+  border-radius: 100px;
+}
+
+.tab-menu a {
+  display: block;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
+}
+
+.tab-menu a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .tab-menu div {
+    padding: 3px 10px 3px 10px;
+    border-radius: 100px;
+  }
+}
