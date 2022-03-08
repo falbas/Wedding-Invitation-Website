@@ -68,24 +68,29 @@ body {
 
 .fontName2 {
   font-family: 'Parisienne', cursive;
-  color: #d4ac2b;
+  color: #D6B184;
   font-size: 3rem;
+  font-weight: bold;
 }
 
-.normalFont {
-  color: white;
-  font-size: 14px;
-}
 
 .normalFont {
-  color: white;
-  font-size: 14px;
+  color: grey;
+  font-size: 18px;
+}
+
+.normalFont2 {
+  color: grey;
+  font-size: 26px;
 }
 
 .semiHead {
-  color: white;
+  color: grey;
   font-size: 20px;
+  font-weight: bold;
 }
+
+
 
 .btn-primary {
   background-color: darkblue !important;
@@ -101,8 +106,19 @@ body {
   padding: 10rem 0rem 10rem 0rem;
 }
 
+.mid-section {
+  margin-top:50px;
+  background-image: url('./assets/images/mid-img.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 10rem 0rem 30rem 0rem;
+}
+
 @media (max-width: 768px) {
   .home-section {
+    padding: 5rem 0rem 5rem 0rem;
+  }
+  .mid-section {
     padding: 5rem 0rem 5rem 0rem;
   }
 }
