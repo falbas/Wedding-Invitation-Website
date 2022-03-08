@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+.modalBackground{
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("https://wallpaperaccess.com/full/2149565.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.modalBackground img {
+    margin-top: 20px;
+    width: 250px;
+}
+
+.fontName {
+    font-family: "MyWebFont";;
+    src: url('../font/Parisienne-Regular.ttf');
+    color: #ead698;
+    font-size: 30px;
+}
+
+.normalFont {
+    color: white;
+    font-size: 14px;
+}
+
+.semiHead {
+    color: white;
+    font-size: 20px;
+}
+
+.btn-primary {
+    background-color:darkblue !important;
+    border-radius: 12px !important;
+    font-size: 12px important;
+}
