@@ -2,8 +2,9 @@ import React from 'react'
 
 //import components
 import HomeModal from './components/HomeModal'
-import Home from './components/Home'
 import TabMenu from './components/TabMenu'
+import Home from './components/Home'
+import Mempelai from './components/Mempelai'
 
 class App extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
         <HomeModal />
         <TabMenu />
         <Home />
+        <Mempelai />
       </>
     )
   }

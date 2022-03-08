@@ -62,17 +62,28 @@ body {
 
 .fontName {
   font-family: 'Parisienne', cursive;
-  color: #ead698;
+  color: #d6b184;
   font-size: 40px;
 }
 
 .fontName2 {
   font-family: 'Parisienne', cursive;
-  color: #D6B184;
+  color: #d6b184;
   font-size: 3rem;
   font-weight: bold;
 }
 
+.fontName2 {
+  font-family: 'Parisienne', cursive;
+  color: #d6b184;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.modalNormalFont {
+  color: #ffffff;
+  font-size: 18px;
+}
 
 .normalFont {
   color: grey;
@@ -84,13 +95,31 @@ body {
   font-size: 26px;
 }
 
+.modalSemiHead {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .semiHead {
   color: grey;
   font-size: 20px;
   font-weight: bold;
 }
 
+.semiHead2 {
+  font-family: 'Parisienne', cursive;
+  color: #d6b184;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
 
+@media (max-width: 768px) {
+  .semiHead2 {
+    font-size: 2rem;
+  }
+}
 
 .btn-primary {
   background-color: darkblue !important;
@@ -100,31 +129,31 @@ body {
 
 .home-section {
   background-image: url('./assets/images/pojok.png'),
-    linear-gradient(rgba(255, 255, 190, 0.4), rgba(0, 0, 0, 0.1));
+    linear-gradient(rgba(255, 255, 190, 0.4), rgb(255, 255, 255));
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 10rem 0rem 10rem 0rem;
+  padding: 10rem 0rem 5rem 0rem;
 }
 
 .mid-section {
-  margin-top:50px;
   background-image: url('./assets/images/mid-img.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 10rem 0rem 30rem 0rem;
+  padding: 5rem 0rem 10rem 0rem;
 }
 
 @media (max-width: 768px) {
   .home-section {
     padding: 5rem 0rem 5rem 0rem;
   }
+
   .mid-section {
-    padding: 5rem 0rem 5rem 0rem;
+    padding: 0rem;
   }
 }
 
 .timer {
-  background-color: #d4ac2b;
+  background-color: #d6b184;
   color: #fff;
   font-weight: bold;
   border-radius: 10px;
@@ -146,20 +175,20 @@ body {
 }
 
 .tab-menu div {
-  background-color: rgba(212, 172, 43, 0.65);
+  background-color: rgba(214, 177, 132, 0.7);
   padding: 10px 20px 10px 20px;
   border-radius: 100px;
 }
 
 .tab-menu a {
   display: block;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   text-decoration: none;
   margin: 0px 10px 0px 10px;
 }
 
 .tab-menu a:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
 

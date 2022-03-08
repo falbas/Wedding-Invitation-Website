@@ -22,10 +22,12 @@ class HomeModal extends React.Component {
                 <p className='fontName'>Taki & Mitsuha</p>
               </div>
               <div className='col-12'>
-                <span className='normalFont'>Kepada Bapak/Ibu/Saudara/i</span>
+                <span className='modalNormalFont'>
+                  Kepada Bapak/Ibu/Saudara/i
+                </span>
                 <br />
-                <b className='semiHead'>Nama Saudara</b>
-                <p className='normalFont p-2'>
+                <b className='modalSemiHead'>Nama Saudara</b>
+                <p className='modalNormalFont p-2'>
                   Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.
                 </p>
                 <button
