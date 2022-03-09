@@ -5,8 +5,8 @@ import BismillahImg from '../assets/images/bismillah.png'
 class Mempelai extends React.Component {
   render() {
     return (
-      <div className='mid-section'>
-        <div className='d-flex flex-column align-items-center mb-4'>
+      <div className='mempelai-section'>
+        <div className='d-flex flex-column align-items-center'>
           <img src={BismillahImg} alt='bismillahIcon' />
           <p className='semiHead2 mt-3'>Assalamu'alaikum Wr. Wb.</p>
           <div className='col-md-8'>

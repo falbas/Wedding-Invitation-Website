@@ -135,10 +135,12 @@ body {
   padding: 10rem 0rem 5rem 0rem;
 }
 
-.mid-section {
-  background-image: url('./assets/images/mid-img.png');
+.mempelai-section {
+  background-image: url('./assets/images/mid-img.png'),
+    url('./assets/images/pojok2.png');
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: top, bottom;
   padding: 5rem 0rem 10rem 0rem;
 }
 
@@ -147,8 +149,8 @@ body {
     padding: 5rem 0rem 5rem 0rem;
   }
 
-  .mid-section {
-    padding: 0rem;
+  .mempelai-section {
+    padding: 0rem 0rem 5rem 0rem;
   }
 }
 
