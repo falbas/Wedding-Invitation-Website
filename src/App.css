@@ -41,6 +41,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 
 body {
   font-family: Poppins, sans-serif;
@@ -169,6 +170,18 @@ body {
   padding: 1rem 0rem 1rem 0rem;
 }
 
+.doa-section {
+  font-family: 'League Gothic', sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 10rem 0rem 10rem 0rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #d6b184;
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .home-section {
     padding: 5rem 0rem 5rem 0rem;
@@ -176,6 +189,14 @@ body {
 
   .mempelai-section {
     padding: 0rem 0rem 5rem 0rem;
+  }
+
+  .doa-section {
+    padding: 5rem 1rem 5rem 1rem;
+  }
+
+  .doa-section p {
+    font-size: 1.5rem;
   }
 }
 

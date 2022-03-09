@@ -7,6 +7,7 @@ import Home from './components/Home'
 import Mempelai from './components/Mempelai'
 import TimeDate from './components/TimeDate'
 import Galeri from './components/Galeri'
+import Doa from './components/Doa'
 
 class App extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
         <Mempelai />
         <TimeDate />
         <Galeri />
+        <Doa />
       </>
     )
   }
