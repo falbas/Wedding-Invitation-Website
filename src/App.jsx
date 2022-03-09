@@ -5,6 +5,8 @@ import HomeModal from './components/HomeModal'
 import TabMenu from './components/TabMenu'
 import Home from './components/Home'
 import Mempelai from './components/Mempelai'
+import TimeDate from './components/TimeDate'
+
 class App extends React.Component {
   render() {
     return (
@@ -13,6 +15,7 @@ class App extends React.Component {
         <TabMenu />
         <Home />
         <Mempelai />
+        <TimeDate />
       </>
     )
   }
