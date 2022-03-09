@@ -1,13 +1,13 @@
 import React from 'react'
-import saveDate from '../assets/images/saveDate.png'
+import Jadwal from '../assets/images/jadwal.png'
 
 class TimeDate extends React.Component {
   render() {
     return (
       <div className='jadwal-section'>
         <img
-          src={saveDate}
-          alt='saveDate'
+          src={Jadwal}
+          alt='Jadwal'
           className='img-fluid'
           style={{ width: '400px' }}
         />

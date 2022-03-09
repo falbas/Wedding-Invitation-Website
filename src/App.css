@@ -162,6 +162,13 @@ body {
   padding: 5rem 0rem 0rem 0rem;
 }
 
+.galeri-section {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem 1rem 0rem;
+}
+
 @media (max-width: 768px) {
   .home-section {
     padding: 5rem 0rem 5rem 0rem;
@@ -169,6 +176,49 @@ body {
 
   .mempelai-section {
     padding: 0rem 0rem 5rem 0rem;
+  }
+}
+
+.carousel-item {
+  height: 50vh;
+  text-align: center;
+}
+
+.carousel-item img {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 230px;
+    text-align: center;
+  }
+}
+
+.galeri-button {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.galeri-button::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.galeri-button button {
+  flex: 0 0 200px;
+  background-position: top;
+  background-size: cover;
+  height: 20vh;
+  margin: 10px;
+  border: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .galeri-button button {
+    flex: 0 0 100px;
+    margin: 3px;
+    height: 10vh;
   }
 }
 
