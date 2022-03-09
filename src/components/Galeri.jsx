@@ -2,8 +2,18 @@ import React from 'react'
 import Galeri1 from '../assets/images/galeri/galeri1.png'
 import Galeri2 from '../assets/images/galeri/galeri2.png'
 import Galeri3 from '../assets/images/galeri/galeri3.png'
+import ScrollContainer from 'react-indiana-drag-scroll'
 
 class Galeri extends React.Component {
+  constructor() {
+    super()
+    this.container = React.createRef()
+  }
+
+  componentDidMount() {
+    this.container.current.getElement().scrollTo(0, Math.random() * 5000)
+  }
+
   render() {
     return (
       <div className='galeri-section'>
@@ -61,7 +71,7 @@ class Galeri extends React.Component {
             </button>
           </div>
           <div className='w-100'></div>
-          <div className='galeri-button'>
+          <ScrollContainer className='galeri-button' ref={this.container}>
             <button
               type='button'
               data-bs-target='#galeriCarousel'
@@ -106,7 +116,7 @@ class Galeri extends React.Component {
               aria-label='Slide 6'
               style={{ backgroundImage: `url(${Galeri3})` }}
             ></button>
-          </div>
+          </ScrollContainer>
         </div>
       </div>
     )

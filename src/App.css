@@ -197,11 +197,6 @@ body {
 
 .galeri-button {
   display: flex;
-  overflow-x: scroll;
-}
-
-.galeri-button::-webkit-scrollbar {
-  width: 0 !important;
 }
 
 .galeri-button button {
