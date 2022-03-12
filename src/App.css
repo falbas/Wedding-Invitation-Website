@@ -136,6 +136,13 @@ body {
   font-size: 12px important;
 }
 
+.btn-primary2 {
+  background-color: #d6b184 !important;
+  border-radius: 12px !important;
+  font-size: 12px !important;
+  color: #fff !important;
+}
+
 .home-section {
   background-image: url('./assets/images/pojok.png'),
     linear-gradient(rgba(255, 255, 190, 0.4), rgb(255, 255, 255));
@@ -182,6 +189,16 @@ body {
   color: #fff;
 }
 
+.ucapan-section {
+  background-image: url('./assets/images/pojok.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 0rem 10rem 0rem;
+}
+
 @media (max-width: 768px) {
   .home-section {
     padding: 5rem 0rem 5rem 0rem;
@@ -197,6 +214,10 @@ body {
 
   .doa-section p {
     font-size: 1.5rem;
+  }
+
+  .ucapan-section {
+    padding: 5rem 1rem 5rem 1rem;
   }
 }
 
@@ -283,4 +304,10 @@ body {
     padding: 3px 10px 3px 10px;
     border-radius: 100px;
   }
+}
+
+.ucapan {
+  max-height: 250px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
