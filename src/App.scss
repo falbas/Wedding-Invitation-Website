@@ -1,0 +1,23 @@
+$theme-colors: (
+  'primary': #d6b184,
+  'secondary': #fff,
+);
+
+$utilities: (
+  'font-family': (
+    property: font-family,
+    class: font,
+    values: (
+      parisienne: (
+        'Parisienne',
+        cursive,
+      ),
+      league-gothic: (
+        'League Gothic',
+        sans-serif,
+      ),
+    ),
+  ),
+);
+
+@import '~bootstrap/scss/bootstrap';
