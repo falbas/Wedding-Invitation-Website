@@ -199,6 +199,18 @@ body {
   padding: 10rem 0rem 10rem 0rem;
 }
 
+.penutup-section {
+  background-image: url('./assets/images/batas.png'),
+    url('./assets/images/pojok2.png');
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rem 0rem 10rem 0rem;
+}
+
 @media (max-width: 768px) {
   .home-section {
     padding: 5rem 0rem 5rem 0rem;
@@ -217,6 +229,10 @@ body {
   }
 
   .ucapan-section {
+    padding: 5rem 1rem 5rem 1rem;
+  }
+
+  .penutup-section {
     padding: 5rem 1rem 5rem 1rem;
   }
 }

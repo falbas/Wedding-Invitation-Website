@@ -9,6 +9,7 @@ import TimeDate from './components/TimeDate'
 import Galeri from './components/Galeri'
 import Doa from './components/Doa'
 import Ucapan from './components/Ucapan'
+import Penutup from './components/Penutup'
 
 class App extends React.Component {
   render() {
@@ -22,6 +23,7 @@ class App extends React.Component {
         <Galeri />
         <Doa />
         <Ucapan />
+        <Penutup />
       </>
     )
   }
