@@ -40,7 +40,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className='home-section'>
+      <div className='home-section' id='home'>
         <div className='d-flex flex-column align-items-center mb-4'>
           <b className='semiHead h1'>THE WEDDING OF</b>
           <div className='w-75 text-center p-md-5'>

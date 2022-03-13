@@ -5,17 +5,20 @@ class Tab extends React.Component {
     return (
       <div className='tab-menu'>
         <div className='hstack gap-3 gap-md-5'>
-          <a href='#section1'>
-            <i className='bi bi-apple fs-1'></i>
+          <a href='#home'>
+            <i class='bi bi-bookmark-heart fs-1'></i>
           </a>
-          <a href='#section2'>
-            <i className='bi bi-apple fs-1'></i>
+          <a href='#mempelai'>
+            <i className='bi bi-hearts fs-1'></i>
           </a>
-          <a href='#section3'>
-            <i className='bi bi-apple fs-1'></i>
+          <a href='#tanggal'>
+            <i className='bi bi-calendar-heart fs-1'></i>
           </a>
-          <a href='#section4'>
-            <i className='bi bi-apple fs-1'></i>
+          <a href='#galeri'>
+            <i className='bi bi-image fs-1'></i>
+          </a>
+          <a href='#ucapan'>
+            <i className='bi bi-chat-heart fs-1'></i>
           </a>
         </div>
       </div>

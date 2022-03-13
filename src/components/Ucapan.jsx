@@ -33,7 +33,7 @@ class Ucapan extends React.Component {
 
   render() {
     return (
-      <div className='ucapan-section'>
+      <div className='ucapan-section' id='ucapan'>
         <p className='semiHead2'>Ucapkan Sesuatu</p>
         <p className='semiHead3'>Berikan Ucapan & Doa Restu</p>
         <div className='col-12 col-md-8'>
