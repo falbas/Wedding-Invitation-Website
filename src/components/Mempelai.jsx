@@ -6,23 +6,25 @@ class Mempelai extends React.Component {
   render() {
     return (
       <div className='mempelai-section' id='mempelai'>
-        <div className='d-flex flex-column align-items-center'>
-          <img src={BismillahImg} alt='bismillahIcon' />
-          <p className='semiHead2 mt-3'>Assalamu'alaikum Wr. Wb.</p>
-          <div className='col-md-8'>
-            <p className='normalFont text-center'>
-              Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i
-              serta kerabat sekalian untuk menghadiri acara pernikahan kami:
-            </p>
+        <div className='vstack align-items-center text-center gap-3'>
+          <img src={BismillahImg} className='img-fluid' alt='' />
+          <h1 className='font-parisienne fw-bold text-primary'>
+            Assalamu'alaikum Wr. Wb.
+          </h1>
+          <p className='col-8'>
+            Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i
+            serta kerabat sekalian untuk menghadiri acara pernikahan kami:
+          </p>
+          <div className='col-8 col-md-4'>
+            <img src={BrideImg2} className='img-fluid' alt='' />
           </div>
-          <div className='col-7 col-md-4 text-center p-md-5'>
-            <img src={BrideImg2} className='img-fluid' alt='Bride Home' />
+          <div>
+            <p className='font-parisienne fw-bold text-primary fs-1'>Taki</p>
+            <p className=''>Putra dari Bapak Taka & ibu Tiki</p>
+            <p className='font-parisienne fw-bold text-primary fs-1'>&</p>
+            <p className='font-parisienne fw-bold text-primary fs-1'>Mitsuha</p>
+            <p className=''>Putra dari Bapak Mitshu & ibu wa</p>
           </div>
-          <div className='fontName2'>Taki</div>
-          <div className='normalFont'>Putra dari Bapak Taka & ibu Tiki</div>
-          <div className='fontName2'>&</div>
-          <div className='fontName2'>Mitsuha</div>
-          <div className='normalFont'>Putra dari Bapak Mitshu & ibu wa</div>
         </div>
       </div>
     )

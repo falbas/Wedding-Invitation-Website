@@ -6,7 +6,7 @@ class Tab extends React.Component {
       <div className='tab-menu'>
         <div className='hstack gap-3 gap-md-5'>
           <a href='#home'>
-            <i class='bi bi-bookmark-heart fs-1'></i>
+            <i className='bi bi-bookmark-heart fs-1'></i>
           </a>
           <a href='#mempelai'>
             <i className='bi bi-hearts fs-1'></i>

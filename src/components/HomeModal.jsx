@@ -15,29 +15,29 @@ class HomeModal extends React.Component {
           fullscreen={true}
           onHide={() => this.setState({ show: false })}
         >
-          <div className='modalBackground'>
-            <div className='row text-center'>
+          <div className='modal-section'>
+            <div className='vstack align-items-center text-center text-secondary'>
               <div className='col-12'>
-                <img src={ModalImg} alt='profileWedding' />
-                <p className='fontName'>Taki & Mitsuha</p>
+                <img
+                  src={ModalImg}
+                  className='img-fluid mt-5'
+                  style={{ width: '300px' }}
+                  alt=''
+                />
               </div>
-              <div className='col-12'>
-                <span className='modalNormalFont'>
-                  Kepada Bapak/Ibu/Saudara/i
-                </span>
-                <br />
-                <b className='modalSemiHead'>Nama Saudara</b>
-                <p className='modalNormalFont p-2'>
-                  Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.
-                </p>
-                <button
-                  className='btn btn-primary btn-sm'
-                  type='button'
-                  onClick={() => this.setState({ show: false })}
-                >
-                  <i className='bi bi-book mx-1'></i> Buka Undangan
-                </button>
-              </div>
+              <h1 className='text-primary font-parisienne fw-bold'>
+                Taki & Mitsuha
+              </h1>
+              <p>Kepada Bapak/Ibu/Saudara/i</p>
+              <h2>Nama Saudara</h2>
+              <p>Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.</p>
+              <button
+                type='button'
+                className='btn btn-primary btn-sm rounded-pill mt-3'
+                onClick={() => this.setState({ show: false })}
+              >
+                <i className='bi bi-book mx-1'></i> Buka Undangan
+              </button>
             </div>
           </div>
         </Modal>

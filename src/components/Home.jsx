@@ -41,40 +41,32 @@ class Home extends React.Component {
   render() {
     return (
       <div className='home-section' id='home'>
-        <div className='d-flex flex-column align-items-center mb-4'>
-          <b className='semiHead h1'>THE WEDDING OF</b>
-          <div className='w-75 text-center p-md-5'>
-            <img src={BrideImg1} className='img-fluid' alt='Bride Home' />
+        <div className='vstack align-items-center text-center gap-3'>
+          <h1>THE WEDDING OF</h1>
+          <div className='col-8 col-md-6'>
+            <img src={BrideImg1} className='img-fluid' alt='' />
           </div>
-          <p className='fontName2'>Taki & Mitsuha</p>
-          <p className='text-center normalFont px-1'>
-            Kami berharap Anda menjadi bagian dari hari istimewa kami!
-          </p>
-          <div className='text-center'>
-            <div className='row'>
-              <div className='col'>
-                <div className='row timer g-0'>
-                  <div className='col-12 fs-3'>{this.state.day}</div>
-                  <div className='col-12'>Hari</div>
-                </div>
+          <h1 className='font-parisienne text-primary fw-bold'>
+            Taki & Mitsuha
+          </h1>
+          <p>Kami berharap Anda menjadi bagian dari hari istimewa kami!</p>
+          <div className='col-12 col-md-8'>
+            <div className='row gap-2 gap-md-3 text-secondary g-0 mx-2'>
+              <div className='col bg-primary rounded'>
+                <p className='fs-3'>{this.state.day}</p>
+                <p>Hari</p>
               </div>
-              <div className='col'>
-                <div className='row timer g-0'>
-                  <div className='col-12 fs-3'>{this.state.hour}</div>
-                  <div className='col-12'>Jam</div>
-                </div>
+              <div className='col bg-primary rounded'>
+                <p className='fs-3'>{this.state.hour}</p>
+                <p>Jam</p>
               </div>
-              <div className='col'>
-                <div className='row timer g-0'>
-                  <div className='col-12 fs-3'>{this.state.minute}</div>
-                  <div className='col-12'>Menit</div>
-                </div>
+              <div className='col bg-primary rounded'>
+                <p className='fs-3'>{this.state.minute}</p>
+                <p>Menit</p>
               </div>
-              <div className='col'>
-                <div className='row timer g-0'>
-                  <div className='col-12 fs-3'>{this.state.second}</div>
-                  <div className='col-12'>Detik</div>
-                </div>
+              <div className='col bg-primary rounded'>
+                <p className='fs-3'>{this.state.second}</p>
+                <p>Detik</p>
               </div>
             </div>
           </div>

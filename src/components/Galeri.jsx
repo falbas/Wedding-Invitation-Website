@@ -1,13 +1,20 @@
 import React from 'react'
-import Galeri1 from '../assets/images/galeri/galeri1.png'
-import Galeri2 from '../assets/images/galeri/galeri2.png'
-import Galeri3 from '../assets/images/galeri/galeri3.png'
 import ScrollContainer from 'react-indiana-drag-scroll'
 
 class Galeri extends React.Component {
   constructor() {
     super()
     this.container = React.createRef()
+    this.state = {
+      galeri: [
+        'https://diazpermana.files.wordpress.com/2016/12/thumb-1920-731745.png',
+        'https://assets.pikiran-rakyat.com/crop/70x46:630x418/x/photo/2021/12/17/29280060.jpg',
+        'https://ilmupedia.co.id/uploads/article/media_upload/21359/kimi_no_nawa_cover_cr.jpeg',
+        'https://p4.wallpaperbetter.com/wallpaper/94/797/206/kimi-no-na-wa-comet-makoto-shinkai-starry-night-wallpaper-preview.jpg',
+        'https://nawalakarsa.id/wp-content/uploads/2019/07/kimino-750x422.jpeg',
+        'https://obs.line-scdn.net/0haxy9ww33PldEQCjB3udBAHwWMiZ3JiReZiEkOWATYjNvbH1TeCVtNGYTaHs6IilVZHVzODIXYDVvdX8Heg/w644',
+      ],
+    }
   }
 
   componentDidMount() {
@@ -17,7 +24,7 @@ class Galeri extends React.Component {
   render() {
     return (
       <div className='galeri-section' id='galeri'>
-        <div className='col-12 col-md-10'>
+        <div className='vstack'>
           <div
             id='galeriCarousel'
             className='carousel slide'
@@ -25,24 +32,14 @@ class Galeri extends React.Component {
           >
             <div>
               <div className='carousel-inner'>
-                <div className='carousel-item active'>
-                  <img src={Galeri1} alt='Galeri1' />
-                </div>
-                <div className='carousel-item'>
-                  <img src={Galeri2} alt='Galeri2' />
-                </div>
-                <div className='carousel-item'>
-                  <img src={Galeri3} alt='Galeri3' />
-                </div>
-                <div className='carousel-item'>
-                  <img src={Galeri1} alt='Galeri1' />
-                </div>
-                <div className='carousel-item'>
-                  <img src={Galeri2} alt='Galeri2' />
-                </div>
-                <div className='carousel-item'>
-                  <img src={Galeri3} alt='Galeri3' />
-                </div>
+                {this.state.galeri.map((galeri, index) => (
+                  <div
+                    key={index}
+                    className={`carousel-item ${index ? '' : 'active'}`}
+                  >
+                    <img src={galeri} alt='' />
+                  </div>
+                ))}
               </div>
             </div>
             <button
@@ -70,52 +67,19 @@ class Galeri extends React.Component {
               <span className='visually-hidden'>Next</span>
             </button>
           </div>
-          <div className='w-100'></div>
           <ScrollContainer className='galeri-button' ref={this.container}>
-            <button
-              type='button'
-              data-bs-target='#galeriCarousel'
-              data-bs-slide-to='0'
-              className='active'
-              aria-current='true'
-              aria-label='Slide 1'
-              style={{ backgroundImage: `url(${Galeri1})` }}
-            ></button>
-            <button
-              type='button'
-              data-bs-target='#galeriCarousel'
-              data-bs-slide-to='1'
-              aria-label='Slide 2'
-              style={{ backgroundImage: `url(${Galeri2})` }}
-            ></button>
-            <button
-              type='button'
-              data-bs-target='#galeriCarousel'
-              data-bs-slide-to='2'
-              aria-label='Slide 3'
-              style={{ backgroundImage: `url(${Galeri3})` }}
-            ></button>
-            <button
-              type='button'
-              data-bs-target='#galeriCarousel'
-              data-bs-slide-to='3'
-              aria-label='Slide 4'
-              style={{ backgroundImage: `url(${Galeri1})` }}
-            ></button>
-            <button
-              type='button'
-              data-bs-target='#galeriCarousel'
-              data-bs-slide-to='4'
-              aria-label='Slide 5'
-              style={{ backgroundImage: `url(${Galeri2})` }}
-            ></button>
-            <button
-              type='button'
-              data-bs-target='#galeriCarousel'
-              data-bs-slide-to='5'
-              aria-label='Slide 6'
-              style={{ backgroundImage: `url(${Galeri3})` }}
-            ></button>
+            {this.state.galeri.map((galeri, index) => (
+              <button
+                key={index}
+                type='button'
+                data-bs-target='#galeriCarousel'
+                data-bs-slide-to={index}
+                aria-label={`Slide ${index + 1}`}
+                style={{
+                  backgroundImage: `url(${galeri})`,
+                }}
+              ></button>
+            ))}
           </ScrollContainer>
         </div>
       </div>

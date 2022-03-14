@@ -5,56 +5,37 @@ class TimeDate extends React.Component {
   render() {
     return (
       <div className='jadwal-section' id='tanggal'>
-        <img
-          src={Jadwal}
-          alt='Jadwal'
-          className='img-fluid'
-          style={{ width: '400px' }}
-        />
-        <div className='my-4 col-11 col-md-6 bg-white shadow rounded'>
-          <div className='d-flex flex-column align-items-center mt-2'>
-            <p className='semiHead2'>Akad Nikah</p>
-            <p className='semiHead3'>Minggu, 05 May 2022</p>
-            <div className='text-center mx-2 text-justify'>
-              <span className='normalFont'>
-                <i>Pukul 08.00 WIB s/d selesai</i>
-              </span>
-              <br />
-              <span className='normalFont'>
-                <i>
-                  Alamat: <b>GOR Olahraga Sunter</b>
-                </i>
-              </span>
-              <br /> <br />
-              <p className='normalFont text-justify word-break text-center'>
-                <i>
-                  Jl. Taman Tirta Sunter 1 No.9, RT.8/RW.14, Sunter Jaya, Kec.
-                  Tj. Priok, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14360
-                </i>
+        <div className='vstack align-items-center text-center gap-3'>
+          <div className='col-8 col-md-6'>
+            <img src={Jadwal} className='img-fluid' alt='' />
+          </div>
+          <div className='col-11 col-md-6 shadow rounded p-3'>
+            <div className='vstack align-items-center'>
+              <h1 className='font-parisienne fw-bold text-primary'>
+                Akad Nikah
+              </h1>
+              <h3 className='fw-bold fst-italic'>Minggu, 05 May 2022</h3>
+              <p className='fst-italic'>Pukul 08.00 WIB s/d selesai</p>
+              <p className='fst-italic'>
+                Alamat: <b>GOR Olahraga Sunter</b>
+              </p>
+              <p className='fst-italic mt-3'>
+                Jl. Taman Tirta Sunter 1 No.9, RT.8/RW.14, Sunter Jaya, Kec. Tj.
+                Priok, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14360
               </p>
             </div>
           </div>
-        </div>
-        <div className='my-4 col-11 col-md-6 bg-white shadow rounded'>
-          <div className='d-flex flex-column align-items-center mt-2'>
-            <p className='semiHead2'>Resepsi</p>
-            <p className='semiHead3'>Minggu, 05 May 2022</p>
-            <div className='text-center mx-2 text-justify'>
-              <span className='normalFont'>
-                <i>Pukul 08.00 WIB s/d selesai</i>
-              </span>
-              <br />
-              <span className='normalFont'>
-                <i>
-                  Alamat: <b>GOR Olahraga Sunter</b>
-                </i>
-              </span>
-              <br /> <br />
-              <p className='normalFont text-justify word-break text-center'>
-                <i>
-                  Jl. Taman Tirta Sunter 1 No.9, RT.8/RW.14, Sunter Jaya, Kec.
-                  Tj. Priok, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14360
-                </i>
+          <div className='col-11 col-md-6 shadow rounded p-3'>
+            <div className='vstack align-items-center'>
+              <h1 className='font-parisienne fw-bold text-primary'>Resepsi</h1>
+              <h3 className='fw-bold fst-italic'>Minggu, 05 May 2022</h3>
+              <p className='fst-italic'>Pukul 08.00 WIB s/d selesai</p>
+              <p className='fst-italic'>
+                Alamat: <b>GOR Olahraga Sunter</b>
+              </p>
+              <p className='fst-italic mt-3'>
+                Jl. Taman Tirta Sunter 1 No.9, RT.8/RW.14, Sunter Jaya, Kec. Tj.
+                Priok, Kota Jkt Utara, Daerah Khusus Ibukota Jakarta 14360
               </p>
             </div>
           </div>
