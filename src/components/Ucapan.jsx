@@ -18,13 +18,11 @@ class Ucapan extends React.Component {
           <p className='mb-3'>Berikan Ucapan & Doa Restu</p>
           <div className='col-11 col-md-8'>
             <div className='mb-3'>
-              <input type='email' className='form-control' placeholder='Nama' />
-            </div>
-            <div className='mb-3'>
               <textarea
                 className='form-control'
-                rows='3'
+                rows='4'
                 placeholder='Ucapan'
+                defaultValue={this.props.invGuest.pesan}
               ></textarea>
             </div>
             <div className='dropdown mb-3'>
@@ -36,8 +34,10 @@ class Ucapan extends React.Component {
               </select>
             </div>
             <div className='mb-5'>
-              <button className='btn btn-primary2 btn-sm' type='button'>
-                Kirim Ucapan
+              <button className='btn btn-primary btn-sm' type='button'>
+                {this.props.invGuest.pesan === ''
+                  ? 'Kirim Pesan'
+                  : 'Ubah Pesan'}
               </button>
             </div>
             <div className='mb-3 overflow-auto' style={{ height: '250px' }}>

@@ -28,7 +28,7 @@ function App() {
           <TimeDate data={getData()} />
           <Galeri data={getData()} />
           <Doa />
-          <Ucapan data={getData()} />
+          <Ucapan data={getData()} invGuest={invGuest} />
           <Penutup data={getData()} />
         </>
       ) : (
