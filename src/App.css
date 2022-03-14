@@ -1,0 +1,207 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* custom style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+body {
+  font-family: Poppins, sans-serif !important;
+  color: #808080 !important;
+}
+
+p {
+  margin: 0 !important;
+}
+
+@media (min-width: 768px) {
+  p {
+    margin: 0 !important;
+    font-size: 24px;
+  }
+}
+
+.modal-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./assets/images/modal-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.home-section {
+  background-image: url('./assets/images/pojok.png'),
+    linear-gradient(rgba(255, 255, 190, 0.4), rgb(255, 255, 255));
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 10rem 0rem 0rem 0rem;
+}
+
+.mempelai-section {
+  background-image: url('./assets/images/mid-img.png'),
+    url('./assets/images/pojok2.png');
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 10rem 0rem 10rem 0rem;
+}
+
+.jadwal-section {
+  background-image: url('./assets/images/pojok.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 10rem 0rem 10rem 0rem;
+}
+
+.galeri-section {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 3rem 0rem 3rem 0rem;
+}
+
+.ucapan-section {
+  background-image: url('./assets/images/pojok.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 10rem 0rem 10rem 0rem;
+}
+
+.penutup-section {
+  background-image: url('./assets/images/batas.png'),
+    url('./assets/images/pojok2.png');
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 20rem 0rem 10rem 0rem;
+}
+
+@media (max-width: 768px) {
+  .home-section {
+    padding: 5rem 0rem 5rem 0rem;
+  }
+
+  .mempelai-section {
+    padding: 0rem 0rem 5rem 0rem;
+  }
+
+  .jadwal-section {
+    padding: 5rem 0rem 5rem 0rem;
+  }
+
+  .ucapan-section {
+    padding: 5rem 0rem 5rem 0rem;
+  }
+
+  .penutup-section {
+    padding: 5rem 0rem 5rem 0rem;
+  }
+}
+
+.tab-menu {
+  display: flex;
+  position: sticky;
+  top: 10px;
+  float: left;
+  width: 100%;
+  justify-content: center;
+  z-index: 100;
+}
+
+.tab-menu div {
+  background-color: rgba(214, 177, 132, 0.7);
+  padding: 10px 20px 10px 20px;
+  border-radius: 100px;
+}
+
+.tab-menu a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 0px 10px 0px 10px;
+}
+
+.tab-menu a:hover {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .tab-menu div {
+    padding: 3px 10px 3px 10px;
+    border-radius: 100px;
+  }
+}
+
+.carousel-item {
+  height: 50vh;
+  text-align: center;
+}
+
+.carousel-item img {
+  height: 100%;
+}
+
+.galeri-button {
+  display: flex;
+}
+
+.galeri-button button {
+  flex: 0 0 200px;
+  background-position: top;
+  background-size: cover;
+  height: 20vh;
+  margin: 10px;
+  border: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 230px;
+    text-align: center;
+  }
+
+  .galeri-button button {
+    flex: 0 0 100px;
+    margin: 3px;
+    height: 10vh;
+  }
+}

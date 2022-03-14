@@ -1,0 +1,19 @@
+$theme-colors: (
+  'primary': #d6b184,
+  'secondary': #fff,
+);
+
+$utilities: (
+  'font-family': (
+    property: font-family,
+    class: font,
+    values: (
+      parisienne: (
+        'Parisienne',
+        cursive,
+      ),
+    ),
+  ),
+);
+
+@import '~bootstrap/scss/bootstrap';
