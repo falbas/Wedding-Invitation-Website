@@ -1,5 +1,6 @@
 import React from 'react'
-import { getData } from './data'
+import { useParams } from 'react-router-dom'
+import { getData, getGuest } from './data'
 
 //import components
 import HomeModal from './components/HomeModal'
@@ -12,22 +13,29 @@ import Doa from './components/Doa'
 import Ucapan from './components/Ucapan'
 import Penutup from './components/Penutup'
 
-class App extends React.Component {
-  render() {
-    return (
-      <>
-        <HomeModal data={getData()} />
-        <TabMenu />
-        <Home data={getData()} />
-        <Mempelai data={getData()} />
-        <TimeDate data={getData()} />
-        <Galeri data={getData()} />
-        <Doa />
-        <Ucapan data={getData()} />
-        <Penutup data={getData()} />
-      </>
-    )
-  }
+function App() {
+  let params = useParams()
+  let invGuest = getGuest(params.guest)
+
+  return (
+    <>
+      <HomeModal data={getData()} invGuest={invGuest} />
+      {invGuest ? (
+        <>
+          <TabMenu />
+          <Home data={getData()} />
+          <Mempelai data={getData()} />
+          <TimeDate data={getData()} />
+          <Galeri data={getData()} />
+          <Doa />
+          <Ucapan data={getData()} />
+          <Penutup data={getData()} />
+        </>
+      ) : (
+        ''
+      )}
+    </>
+  )
 }
 
 export default App
