@@ -1,4 +1,5 @@
 import React from 'react'
+import { getData } from './data'
 
 //import components
 import HomeModal from './components/HomeModal'
@@ -15,15 +16,15 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <HomeModal />
+        <HomeModal data={getData()} />
         <TabMenu />
-        <Home />
-        <Mempelai />
-        <TimeDate />
-        <Galeri />
+        <Home data={getData()} />
+        <Mempelai data={getData()} />
+        <TimeDate data={getData()} />
+        <Galeri data={getData()} />
         <Doa />
-        <Ucapan />
-        <Penutup />
+        <Ucapan data={getData()} />
+        <Penutup data={getData()} />
       </>
     )
   }

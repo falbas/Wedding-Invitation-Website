@@ -1,6 +1,5 @@
 import React from 'react'
 import { Modal } from 'react-bootstrap'
-import ModalImg from '../assets/images/modal-img.png'
 
 class HomeModal extends React.Component {
   state = {
@@ -19,14 +18,14 @@ class HomeModal extends React.Component {
             <div className='vstack align-items-center text-center text-secondary'>
               <div className='col-12'>
                 <img
-                  src={ModalImg}
+                  src={this.props.data.coverImage}
                   className='img-fluid mt-5'
                   style={{ width: '300px' }}
                   alt=''
                 />
               </div>
               <h1 className='text-primary font-parisienne fw-bold'>
-                Taki & Mitsuha
+                {`${this.props.data.manFirstName} & ${this.props.data.womanFirstName}`}
               </h1>
               <p>Kepada Bapak/Ibu/Saudara/i</p>
               <h2>Nama Saudara</h2>

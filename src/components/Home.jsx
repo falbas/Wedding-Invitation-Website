@@ -1,12 +1,11 @@
 import React from 'react'
 import '../App.css'
-import BrideImg1 from '../assets/images/bride-img1.png'
 
 class Home extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
-      date: 'May 5, 2022 15:37:25',
+      date: props.data.date,
       day: 0,
       hour: 0,
       minute: 0,
@@ -44,10 +43,14 @@ class Home extends React.Component {
         <div className='vstack align-items-center text-center gap-3'>
           <h1>THE WEDDING OF</h1>
           <div className='col-8 col-md-6'>
-            <img src={BrideImg1} className='img-fluid' alt='' />
+            <img
+              src={this.props.data.brideImage1}
+              className='img-fluid'
+              alt=''
+            />
           </div>
           <h1 className='font-parisienne text-primary fw-bold'>
-            Taki & Mitsuha
+            {`${this.props.data.manFirstName} & ${this.props.data.womanFirstName}`}
           </h1>
           <p>Kami berharap Anda menjadi bagian dari hari istimewa kami!</p>
           <div className='col-12 col-md-8'>

@@ -2,18 +2,11 @@ import React from 'react'
 import ScrollContainer from 'react-indiana-drag-scroll'
 
 class Galeri extends React.Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.container = React.createRef()
     this.state = {
-      galeri: [
-        'https://diazpermana.files.wordpress.com/2016/12/thumb-1920-731745.png',
-        'https://assets.pikiran-rakyat.com/crop/70x46:630x418/x/photo/2021/12/17/29280060.jpg',
-        'https://ilmupedia.co.id/uploads/article/media_upload/21359/kimi_no_nawa_cover_cr.jpeg',
-        'https://p4.wallpaperbetter.com/wallpaper/94/797/206/kimi-no-na-wa-comet-makoto-shinkai-starry-night-wallpaper-preview.jpg',
-        'https://nawalakarsa.id/wp-content/uploads/2019/07/kimino-750x422.jpeg',
-        'https://obs.line-scdn.net/0haxy9ww33PldEQCjB3udBAHwWMiZ3JiReZiEkOWATYjNvbH1TeCVtNGYTaHs6IilVZHVzODIXYDVvdX8Heg/w644',
-      ],
+      galeri: props.data.galleries,
     }
   }
 

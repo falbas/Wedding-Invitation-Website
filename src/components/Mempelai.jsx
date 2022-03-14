@@ -1,5 +1,4 @@
 import React from 'react'
-import BrideImg2 from '../assets/images/bride-img2.png'
 import BismillahImg from '../assets/images/bismillah.png'
 
 class Mempelai extends React.Component {
@@ -16,14 +15,28 @@ class Mempelai extends React.Component {
             serta kerabat sekalian untuk menghadiri acara pernikahan kami:
           </p>
           <div className='col-8 col-md-4'>
-            <img src={BrideImg2} className='img-fluid' alt='' />
+            <img
+              src={this.props.data.brideImage2}
+              className='img-fluid'
+              alt=''
+            />
           </div>
           <div>
-            <p className='font-parisienne fw-bold text-primary fs-1'>Taki</p>
-            <p className=''>Putra dari Bapak Taka & ibu Tiki</p>
+            <p className='font-parisienne fw-bold text-primary fs-1'>
+              {this.props.data.manFullName}
+            </p>
+            <p className=''>
+              Putra dari Bapak {this.props.data.manFatherName} & Ibu{' '}
+              {this.props.data.manMotherName}
+            </p>
             <p className='font-parisienne fw-bold text-primary fs-1'>&</p>
-            <p className='font-parisienne fw-bold text-primary fs-1'>Mitsuha</p>
-            <p className=''>Putra dari Bapak Mitshu & ibu wa</p>
+            <p className='font-parisienne fw-bold text-primary fs-1'>
+              {this.props.data.womanFullName}
+            </p>
+            <p className=''>
+              Putra dari Bapak {this.props.data.womanFatherName} & Ibu{' '}
+              {this.props.data.womanMotherName}
+            </p>
           </div>
         </div>
       </div>

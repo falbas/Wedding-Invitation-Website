@@ -1,5 +1,4 @@
 import React from 'react'
-import BrideImg3 from '../assets/images/bride-img3.png'
 
 class Penutup extends React.Component {
   render() {
@@ -7,7 +6,11 @@ class Penutup extends React.Component {
       <div className='penutup-section'>
         <div className='vstack align-items-center text-center gap-3'>
           <div className='col-8 col-md-6'>
-            <img src={BrideImg3} className='img-fluid m-3' alt='Bride Home' />
+            <img
+              src={this.props.data.brideImage1}
+              className='img-fluid m-3'
+              alt='Bride Home'
+            />
           </div>
           <div className='col-11 col-md-8'>
             <p className=''>
@@ -22,7 +25,7 @@ class Penutup extends React.Component {
           </p>
           <p className=''>Jazakumullahu Khairan</p>
           <p className='font-parisienne text-primary fw-bold fs-1'>
-            Taki & Mitsuha
+            {`${this.props.data.manFirstName} & ${this.props.data.womanFirstName}`}
           </p>
         </div>
       </div>
