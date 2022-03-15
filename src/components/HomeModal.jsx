@@ -48,6 +48,11 @@ class HomeModal extends React.Component {
               >
                 <i className='bi bi-book mx-1'></i> Buka Undangan
               </button>
+              <div className='w-100 fixed-bottom text-end opacity-50 px-md-3'>
+                <a href='http://www.freepik.com' className='link-primary'>
+                  Designed by BiZkettE1 / Freepik
+                </a>
+              </div>
             </div>
           </div>
         </Modal>
