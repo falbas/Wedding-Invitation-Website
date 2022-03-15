@@ -27,10 +27,20 @@ class Ucapan extends React.Component {
             </div>
             <div className='dropdown mb-3'>
               <select className='form-select form-select-sm'>
-                <option defaultValue>Konfirmasi Kehadiran</option>
-                <option value='1'>Hadir</option>
-                <option value='2'>Akan Hadir</option>
-                <option value='2'>Tidak Hadir</option>
+                <option
+                  defaultValue={
+                    this.props.invGuest.konfirmasi_kehadiran
+                      ? this.props.invGuest.konfirmasi_kehadiran
+                      : ''
+                  }
+                >
+                  {this.props.invGuest.konfirmasi_kehadiran
+                    ? this.props.invGuest.konfirmasi_kehadiran
+                    : 'Konfirmasi Kehadiran'}
+                </option>
+                <option value='Hadir'>Hadir</option>
+                <option value='Akan Hadir'>Akan Hadir</option>
+                <option value='Tidak Hadir'>Tidak Hadir</option>
               </select>
             </div>
             <div className='mb-5'>
