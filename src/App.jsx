@@ -7,7 +7,7 @@ import HomeModal from './components/HomeModal'
 import TabMenu from './components/TabMenu'
 import Home from './components/Home'
 import Mempelai from './components/Mempelai'
-import TimeDate from './components/TimeDate'
+import Jadwal from './components/Jadwal'
 import Galeri from './components/Galeri'
 import Doa from './components/Doa'
 import Ucapan from './components/Ucapan'
@@ -23,7 +23,7 @@ function App() {
       <TabMenu />
       <Home data={getData()} className='pt-7' />
       <Mempelai data={getData()} className='py-7' />
-      <TimeDate data={getData()} />
+      <Jadwal data={getData()} className='py-7' />
       <Galeri data={getData()} />
       <Doa />
       <Ucapan data={getData()} />

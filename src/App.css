@@ -87,7 +87,6 @@ p {
   background-image: url('./assets/images/pojok.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 10rem 0rem 10rem 0rem;
 }
 
 .galeri-section {
@@ -112,10 +111,6 @@ p {
 }
 
 @media (max-width: 768px) {
-  .jadwal-section {
-    padding: 5rem 0rem 5rem 0rem;
-  }
-
   .ucapan-section {
     padding: 5rem 0rem 5rem 0rem;
   }

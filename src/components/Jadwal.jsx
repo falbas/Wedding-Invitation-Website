@@ -4,7 +4,7 @@ import Jadwal from '../assets/images/jadwal.png'
 class TimeDate extends React.Component {
   render() {
     return (
-      <div className='jadwal-section' id='tanggal'>
+      <div className={`jadwal-section ${this.props.className}`} id='tanggal'>
         <div className='vstack align-items-center text-center gap-3'>
           <div className='col-8 col-md-6'>
             <img src={Jadwal} className='img-fluid' alt='' />
