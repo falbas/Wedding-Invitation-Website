@@ -10,7 +10,7 @@ class Ucapan extends React.Component {
 
   render() {
     return (
-      <div className='ucapan-section' id='ucapan'>
+      <div className={`ucapan-section ${this.props.className}`} id='ucapan'>
         <div className='vstack align-items-center'>
           <h1 className='font-parisienne fw-bold text-primary'>
             Ucapkan Sesuatu

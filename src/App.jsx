@@ -26,7 +26,7 @@ function App() {
       <Jadwal data={getData()} className='py-7' />
       <Galeri data={getData()} className='py-5' />
       <Doa className='py-7' />
-      <Ucapan data={getData()} />
+      <Ucapan data={getData()} className='py-7' />
       <Penutup data={getData()} />
     </>
   )
