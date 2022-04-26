@@ -81,7 +81,6 @@ p {
   background-position: top, bottom;
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 10rem 0rem 10rem 0rem;
 }
 
 .jadwal-section {
@@ -113,10 +112,6 @@ p {
 }
 
 @media (max-width: 768px) {
-  .mempelai-section {
-    padding: 0rem 0rem 5rem 0rem;
-  }
-
   .jadwal-section {
     padding: 5rem 0rem 5rem 0rem;
   }
