@@ -12,6 +12,7 @@ import Galeri from './components/Galeri'
 import Doa from './components/Doa'
 import Ucapan from './components/Ucapan'
 import Penutup from './components/Penutup'
+import Kredit from './components/Kredit'
 
 function App() {
   let params = useParams()
@@ -28,6 +29,7 @@ function App() {
       <Doa className='py-7' />
       <Ucapan data={getData()} className='py-7' />
       <Penutup data={getData()} className='py-7' />
+      <Kredit />
     </>
   )
 }

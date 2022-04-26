@@ -30,11 +30,6 @@ class Penutup extends React.Component {
             </p>
           </div>
         </div>
-        <div className='text-end bg-primary px-md-3'>
-          <a href='http://www.freepik.com' className='link-light opacity-50'>
-            Designed by BiZkettE1 / Freepik
-          </a>
-        </div>
       </>
     )
   }
