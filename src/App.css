@@ -89,11 +89,6 @@ p {
   background-size: 100%;
 }
 
-.galeri-section {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 3rem 0rem 3rem 0rem;
-}
-
 .ucapan-section {
   background-image: url('./assets/images/pojok.png');
   background-repeat: no-repeat;

@@ -16,7 +16,7 @@ class Galeri extends React.Component {
 
   render() {
     return (
-      <div className='galeri-section' id='galeri'>
+      <div className={`bg-dark ${this.props.className}`} id='galeri'>
         <div className='vstack'>
           <div
             id='galeriCarousel'

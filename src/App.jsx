@@ -24,7 +24,7 @@ function App() {
       <Home data={getData()} className='pt-7' />
       <Mempelai data={getData()} className='py-7' />
       <Jadwal data={getData()} className='py-7' />
-      <Galeri data={getData()} />
+      <Galeri data={getData()} className='py-5' />
       <Doa />
       <Ucapan data={getData()} />
       <Penutup data={getData()} />
