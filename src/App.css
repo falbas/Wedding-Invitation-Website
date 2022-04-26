@@ -73,7 +73,6 @@ p {
     linear-gradient(rgba(255, 255, 190, 0.4), rgb(255, 255, 255));
   background-repeat: no-repeat;
   background-size: 100%;
-  padding: 10rem 0rem 0rem 0rem;
 }
 
 .mempelai-section {
@@ -114,10 +113,6 @@ p {
 }
 
 @media (max-width: 768px) {
-  .home-section {
-    padding: 5rem 0rem 5rem 0rem;
-  }
-
   .mempelai-section {
     padding: 0rem 0rem 5rem 0rem;
   }

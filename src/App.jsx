@@ -21,7 +21,7 @@ function App() {
     <>
       <HomeModal data={getData()} invGuest={invGuest} />
       <TabMenu />
-      <Home data={getData()} />
+      <Home data={getData()} className='pt-7' />
       <Mempelai data={getData()} />
       <TimeDate data={getData()} />
       <Galeri data={getData()} />

@@ -39,20 +39,18 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className='home-section' id='home'>
-        <div className='vstack align-items-center text-center gap-3'>
-          <h1>THE WEDDING OF</h1>
-          <div className='col-8 col-md-6'>
-            <img
-              src={this.props.data.brideImage1}
-              className='img-fluid'
-              alt=''
-            />
-          </div>
-          <h1 className='font-parisienne text-primary fw-bold'>
-            {`${this.props.data.manFirstName} & ${this.props.data.womanFirstName}`}
-          </h1>
-          <p>Kami berharap Anda menjadi bagian dari hari istimewa kami!</p>
+      <div className={`home-section ${this.props.className}`} id='home'>
+        <h1 className='text-center mb-3'>THE WEDDING OF</h1>
+        <div className='text-center mb-3'>
+          <img src={this.props.data.brideImage1} className='img-fluid' alt='' />
+        </div>
+        <h1 className='font-parisienne text-primary fw-bold text-center mb-3'>
+          {`${this.props.data.manFirstName} & ${this.props.data.womanFirstName}`}
+        </h1>
+        <p className='text-center mb-3'>
+          Kami berharap Anda menjadi bagian dari hari istimewa kami!
+        </p>
+        <div className='text-center d-flex justify-content-center'>
           <div className='col-12 col-md-8'>
             <div className='row gap-2 gap-md-3 text-secondary g-0 mx-2'>
               <div className='col bg-primary rounded'>
