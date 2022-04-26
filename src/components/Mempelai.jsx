@@ -11,12 +11,16 @@ class Mempelai extends React.Component {
         <h1 className='font-parisienne fw-bold text-primary text-center mb-3'>
           Assalamu'alaikum Wr. Wb.
         </h1>
-        <p className='px-7 text-center mb-3'>
+        <p className='px-md-7 text-center mb-3'>
           Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i
           serta kerabat sekalian untuk menghadiri acara pernikahan kami:
         </p>
         <div className='text-center mb-3'>
-          <img src={this.props.data.brideImage2} className='img-fluid' alt='' />
+          <img
+            src={this.props.data.brideImage2}
+            className='img-fluid px-5'
+            alt=''
+          />
         </div>
         <p className='font-parisienne fw-bold text-primary fs-1 text-center'>
           {this.props.data.manFullName}

@@ -42,7 +42,11 @@ class Home extends React.Component {
       <div className={`home-section ${this.props.className}`} id='home'>
         <h1 className='text-center mb-3'>THE WEDDING OF</h1>
         <div className='text-center mb-3'>
-          <img src={this.props.data.brideImage1} className='img-fluid' alt='' />
+          <img
+            src={this.props.data.brideImage1}
+            className='img-fluid px-5'
+            alt=''
+          />
         </div>
         <h1 className='font-parisienne text-primary fw-bold text-center mb-3'>
           {`${this.props.data.manFirstName} & ${this.props.data.womanFirstName}`}

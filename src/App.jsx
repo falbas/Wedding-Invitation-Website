@@ -19,18 +19,18 @@ function App() {
   let invGuest = getGuest(params.guest)
 
   return (
-    <>
+    <div className='layout'>
       <HomeModal data={getData()} invGuest={invGuest} />
       <TabMenu />
-      <Home data={getData()} className='pt-7' />
-      <Mempelai data={getData()} className='py-7' />
-      <Jadwal data={getData()} className='py-7' />
+      <Home data={getData()} className='pt-6 pt-md-7' />
+      <Mempelai data={getData()} className='mt-5 pb-6 py-md-7' />
+      <Jadwal data={getData()} className='py-6 py-md-7' />
       <Galeri data={getData()} className='py-5' />
-      <Doa className='py-7' />
-      <Ucapan data={getData()} className='py-7' />
-      <Penutup data={getData()} className='py-7' />
+      <Doa className='py-5 py-md-7' />
+      <Ucapan data={getData()} className='pt-6 pt-md-7' />
+      <Penutup data={getData()} className='py-6 py-md-7' />
       <Kredit />
-    </>
+    </div>
   )
 }
 
