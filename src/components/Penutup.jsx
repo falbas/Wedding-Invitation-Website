@@ -4,7 +4,7 @@ class Penutup extends React.Component {
   render() {
     return (
       <>
-        <div className='penutup-section'>
+        <div className={`penutup-section ${this.props.className}`}>
           <div className='vstack align-items-center text-center gap-3'>
             <div className='col-8 col-md-6'>
               <img
