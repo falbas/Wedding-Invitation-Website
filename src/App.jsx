@@ -20,20 +20,14 @@ function App() {
   return (
     <>
       <HomeModal data={getData()} invGuest={invGuest} />
-      {invGuest ? (
-        <>
-          <TabMenu />
-          <Home data={getData()} />
-          <Mempelai data={getData()} />
-          <TimeDate data={getData()} />
-          <Galeri data={getData()} />
-          <Doa />
-          <Ucapan data={getData()} invGuest={invGuest} />
-          <Penutup data={getData()} />
-        </>
-      ) : (
-        ''
-      )}
+      <TabMenu />
+      <Home data={getData()} />
+      <Mempelai data={getData()} />
+      <TimeDate data={getData()} />
+      <Galeri data={getData()} />
+      <Doa />
+      <Ucapan data={getData()} />
+      <Penutup data={getData()} />
     </>
   )
 }

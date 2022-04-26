@@ -18,26 +18,21 @@ class Ucapan extends React.Component {
           <p className='mb-3'>Berikan Ucapan & Doa Restu</p>
           <div className='col-11 col-md-8'>
             <div className='mb-3'>
+              <input
+                type='text'
+                className='form-control'
+                placeholder='Nama'
+              ></input>
+            </div>
+            <div className='mb-3'>
               <textarea
                 className='form-control'
                 rows='4'
                 placeholder='Ucapan'
-                defaultValue={this.props.invGuest.pesan}
               ></textarea>
             </div>
             <div className='dropdown mb-3'>
               <select className='form-select form-select-sm'>
-                <option
-                  defaultValue={
-                    this.props.invGuest.konfirmasi_kehadiran
-                      ? this.props.invGuest.konfirmasi_kehadiran
-                      : ''
-                  }
-                >
-                  {this.props.invGuest.konfirmasi_kehadiran
-                    ? this.props.invGuest.konfirmasi_kehadiran
-                    : 'Konfirmasi Kehadiran'}
-                </option>
                 <option value='Hadir'>Hadir</option>
                 <option value='Akan Hadir'>Akan Hadir</option>
                 <option value='Tidak Hadir'>Tidak Hadir</option>
@@ -45,9 +40,7 @@ class Ucapan extends React.Component {
             </div>
             <div className='mb-5'>
               <button className='btn btn-primary btn-sm' type='button'>
-                {this.props.invGuest.pesan === ''
-                  ? 'Kirim Pesan'
-                  : 'Ubah Pesan'}
+                Kirim Pesan
               </button>
             </div>
             <div className='mb-3 overflow-auto' style={{ height: '250px' }}>

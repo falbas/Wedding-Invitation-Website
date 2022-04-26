@@ -27,23 +27,13 @@ class HomeModal extends React.Component {
               <h1 className='text-primary font-parisienne fw-bold'>
                 {`${this.props.data.manFirstName} & ${this.props.data.womanFirstName}`}
               </h1>
-              {this.props.invGuest ? (
-                <>
-                  <p>Kepada Bapak/Ibu/Saudara/i</p>
-                  <h2>{this.props.invGuest.nama}</h2>
-                  <p>
-                    Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.
-                  </p>
-                </>
-              ) : (
-                ''
-              )}
+              <p>Kepada Bapak/Ibu/Saudara/i</p>
+              <h2>{this.props.invGuest && this.props.invGuest.nama}</h2>
+              <p>Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.</p>
 
               <button
                 type='button'
-                className={`btn btn-primary btn-sm rounded-pill mt-3 ${
-                  this.props.invGuest ? '' : 'disabled'
-                }`}
+                className='btn btn-primary btn-sm rounded-pill mt-3'
                 onClick={() => this.setState({ show: false })}
               >
                 <i className='bi bi-book mx-1'></i> Buka Undangan
